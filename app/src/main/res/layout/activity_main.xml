@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount,UselessParent" >
+
+   <RelativeLayout
+       android:id="@+id/scrollLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbMain"
+        android:background="#5A8FBB"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/back_arrow_toolbar"
+        android:foregroundTint="@color/white"
+        android:layout_height="170dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="80dp"
+            android:id="@+id/tbProfile"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="80dp"
+            android:background="@drawable/profile"
+            android:gravity="center"
+            android:text="LK"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/profileName"
+            android:text="Lin Htet Ko"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignTop="@+id/tbProfile"
+            android:layout_toEndOf="@+id/tbProfile"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textColor="#E5E1E1"
+            android:layout_alignStart="@+id/profileName"
+            android:layout_below="@+id/profileName"
+            android:text="online"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tbMain"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/setProfile"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="Set Profile Photo"
+            android:textColor="#2480B5"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/set_profile" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:background="#F0F0F0"
+            android:elevation="1dp" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:text="Account"
+            android:textColor="#2480B5"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="+95 9787810106"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/changePhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Tap to change phone number"
+            android:textColor="#8C8D8F" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="#F0F0F0"
+            android:elevation="1dp"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/userNameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="\@linhetko101"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/userNameSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Username"
+            android:textColor="#8C8D8F" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="#F0F0F0"
+            android:elevation="1dp" />
+
+        <TextView
+            android:id="@+id/bioTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Bio"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/bioSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Add a few words about yourself"
+            android:layout_marginBottom="10dp"
+            android:textColor="#8C8D8F" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:background="#F0F0F0"
+            android:elevation="1dp" />
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:text="Settings"
+            android:textColor="#2480B5"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/chatSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="Chat Settings"
+            android:layout_marginVertical="10dp"
+            android:textSize="17sp"
+            app:drawableStartCompat="@drawable/chat" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="Privacy and Security"
+            android:textSize="17sp"
+            app:drawableStartCompat="@drawable/outline_lock_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="#F0F0F0" />
+
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="Notifications and Sounds"
+            android:textSize="17sp"
+            android:layout_marginVertical="10dp"
+            app:drawableStartCompat="@drawable/notification" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="Data and Storage"
+            android:textSize="17sp"
+            android:layout_marginVertical="10dp"
+            app:drawableStartCompat="@drawable/stroage" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="Power Saving"
+            android:textSize="17sp"
+            android:layout_marginVertical="10dp"
+            app:drawableStartCompat="@drawable/power" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/chatFolder"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="Chat Folders"
+            android:textSize="17sp"
+            app:drawableStartCompat="@drawable/folder" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:id="@+id/device"
+            android:paddingHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Devices"
+            android:gravity="center"
+            android:layout_marginVertical="10dp"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            app:drawableStartCompat="@drawable/devices" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#F0F0F0"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:id="@+id/languageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/language"
+                    android:paddingHorizontal="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:drawablePadding="20dp"
+                    app:drawableStartCompat="@drawable/language" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:textColor="#2480B5"
+                    android:textSize="17sp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:background="#F0F0F0"
+            android:elevation="1dp" />
+
+        <TextView
+            android:id="@+id/premium"
+            android:layout_marginVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telegram Premium"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            app:drawableStartCompat="@drawable/premium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:background="#F0F0F0"
+            android:elevation="1dp" />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:text="Help"
+            android:textColor="#2480B5"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/ask"
+            android:layout_marginVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask a Question"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            app:drawableStartCompat="@drawable/chat" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#F0F0F0"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/faq"
+            android:layout_marginVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telegram FAQ"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            app:drawableStartCompat="@drawable/faq" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#F0F0F0"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/policy"
+            android:layout_marginVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:drawablePadding="20dp"
+            app:drawableStartCompat="@drawable/policy" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:background="#F0F0F0"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="15dp"
+                android:textColor="#8C8D8F"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="40dp"
+                android:layout_width="wrap_content"
+                android:maxLines="2"
+                android:text="Telegram for Android v10.0.2(3796) store bundled amd64-v8a"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+   </RelativeLayout>
+    </ScrollView><!--            android:id="@+id/ask_a_question"-->
+
+    <!--        <TextView-->
+</RelativeLayout>
+

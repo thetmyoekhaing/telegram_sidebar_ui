@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Qr" app:showAsAction="ifRoom" android:icon="@drawable/qr_menu">
+    </item>
+
+    <item android:title="Search" app:showAsAction="ifRoom" android:icon="@drawable/search_menu">
+    </item>
+
+    <item android:title="More" app:showAsAction="ifRoom" android:icon="@drawable/more_menu">
+    </item>
+</menu>
